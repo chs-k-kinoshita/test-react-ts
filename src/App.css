@@ -37,6 +37,15 @@
   padding: 2em;
 }
 
+.card button {
+  background-color: #90ee90;
+  color: #1a1a1a;
+}
+
+.card button:hover {
+  background-color: #76d576;
+}
+
 .read-the-docs {
   color: #888;
 }
