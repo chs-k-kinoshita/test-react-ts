@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const buttonClass =
-    "bg-green-300 hover:bg-green-400 text-gray-900 px-4 py-2 rounded cursor-pointer transition-colors"
+    "bg-cyan-400 hover:bg-cyan-500 text-gray-900 w-28 py-2 rounded cursor-pointer transition-colors"
 
   return (
     <>
@@ -33,6 +33,12 @@ function App() {
             onClick={() => setCount((count) => count - 1)}
           >
             decrement
+          </button>
+          <button
+            className={buttonClass}
+            onClick={() => setCount(0)}
+          >
+            reset
           </button>
         </div>
         <p>
