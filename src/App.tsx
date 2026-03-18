@@ -19,12 +19,20 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <p>count is {count}</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          increment
-        </button>
-        <button onClick={() => setCount((count) => count - 1)}>
-          decrement
-        </button>
+        <div className="flex gap-3 justify-center">
+          <button
+            className="bg-green-300 hover:bg-green-400 text-gray-900 px-4 py-2 rounded cursor-pointer transition-colors"
+            onClick={() => setCount((count) => count + 1)}
+          >
+            increment
+          </button>
+          <button
+            className="bg-green-300 hover:bg-green-400 text-gray-900 px-4 py-2 rounded cursor-pointer transition-colors"
+            onClick={() => setCount((count) => count - 1)}
+          >
+            decrement
+          </button>
+        </div>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
