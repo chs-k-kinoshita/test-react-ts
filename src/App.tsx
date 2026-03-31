@@ -30,15 +30,9 @@ function App() {
           </button>
           <button
             className={buttonClass}
-            onClick={() => setCount((count) => count - 1)}
+            onClick={() => setCount((count) => countz - 1)}
           >
             decrement
-          </button>
-          <button
-            className={buttonClass}
-            onClick={() => setCount(0)}
-          >
-            reset
           </button>
         </div>
         <p>
